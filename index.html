@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- SEO Meta 标配 -->
+    <meta name="title" content="粤语屋粤正影视_高清在线观看|粤语剧集资源">
+    <meta name="description" content="粤语屋粤正影视致力于为海内外粤语影视爱好者提供高清粤语剧集在线观看与下载服务。平台汇聚千部经典与现代粤语影片，涵盖剧情、动作、喜剧、警匪等多种类型。画质高清、播放流畅，每日更新不断。马上访问粤语屋粤正影视，畅享纯正粤语影视盛宴！">
+    <meta name="keywords" content="粤语屋粤正影视,粤语剧集在线观看,高清粤语电影,粤语电视剧大全,粤语视频资源,经典粤语片,粤语屋APP">
+    <meta name="robots" content="index,follow">
+    <meta name="bingbot" content="index,follow">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://io.1130.hk/888.js"></script>
+    <title>粤语屋粤正影视_高清在线观看|粤语剧集资源</title>
+    <style>
+        /* ========== 全局 CSS 变量与基础样式 ========== */
+        :root {
+            --primary: #e5484d;
+            --primary-dark: #c2373a;
+            --accent: #ffb224;
+            --bg-deep: #0c1017;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --border-light: rgba(255, 255, 255, 0.08);
+            --text-primary: #e6e8eb;
+            --text-secondary: #8b95a5;
+            --radius-card: 24px;
+            --radius-pill: 70px;
+            --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.35);
+            --transition: all .3s ease;
+            --font-size: 17px;
+            --line-height: 1.9;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            font-size: var(--font-size);
+            line-height: var(--line-height);
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        section {
+            padding: 80px 0;
+        }
+        .section-title {
+            font-size: 40px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        .divider {
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 10px;
+            margin: 24px auto 48px;
+        }
+        /* ========== 粒子背景 ========== */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+        /* ========== 导航栏 ========== */
+        .site-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: rgba(12, 16, 23, .85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 1000;
+        }
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            height: 42px;
+        }
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .logo-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            white-space: nowrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            font-size: 15px;
+            font-weight: 500;
+            transition: color .3s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        /* ========== Banner 首屏 ========== */
+        .hero {
+            min-height: 600px;
+            height: 65vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 70px;
+            background: linear-gradient(135deg, #0f1923 0%, #1a2a3a 100%);
+        }
+        .hero .hero-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(229, 72, 77, .18) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        .hero .hero-bg2 {
+            position: absolute;
+            top: 30%;
+            left: 20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 178, 36, .12) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 12s ease-in-out infinite reverse;
+        }
+        @keyframes pulse {
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            padding: 0 24px;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-left {
+            flex: 1.1;
+        }
+        .hero-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, .95);
+            color: #1a2a3a;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 18px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .2);
+            margin-bottom: 24px;
+            animation: floatY 3s ease-in-out infinite;
+        }
+        .hero-tag svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--primary);
+        }
+        @keyframes floatY {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+        .hero-title {
+            font-size: 52px;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .hero-title span {
+            color: var(--accent);
+        }
+        .hero-desc {
+            color: #a0b0c0;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+            max-width: 480px;
+        }
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .hero-tags span {
+            background: rgba(255, 255, 255, .1);
+            color: #d0d8e0;
+            border: 1px solid rgba(255, 255, 255, .08);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            backdrop-filter: blur(4px);
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 6px 20px rgba(229, 72, 77, .35);
+        }
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(229, 72, 77, .45);
+        }
+        .btn-ghost {
+            background: transparent;
+            color: #d0d8e0;
+            padding: 13px 32px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 15px;
+            border: 1px solid rgba(255, 255, 255, .25);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .btn-ghost:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+        /* 显示器窗口 */
+        .hero-window {
+            width: 100%;
+            max-width: 460px;
+            background: #111820;
+            border-radius: 16px;
+            border: 2px solid #222d3a;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .6);
+            overflow: hidden;
+        }
+        .window-top-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            background: #1a222c;
+            border-bottom: 1px solid rgba(255, 255, 255, .05);
+        }
+        .window-top-bar .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .dot-red {
+            background: #e5484d;
+        }
+        .dot-yellow {
+            background: #ffb224;
+        }
+        .dot-green {
+            background: #46a758;
+        }
+        .window-url {
+            flex: 1;
+            text-align: center;
+            font-size: 12px;
+            color: #6b7a8d;
+            background: #0e141a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-left: 8px;
+        }
+        .window-body {
+            display: flex;
+            padding: 20px;
+            gap: 16px;
+            min-height: 200px;
+            align-items: center;
+        }
+        .window-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+        .window-left .product-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .window-left .product-name {
+            font-size: 12px;
+            color: #8b95a5;
+        }
+        .window-center {
+            flex: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gauge-svg {
+            width: 120px;
+            height: 120px;
+        }
+        .gauge-text {
+            position: absolute;
+            text-align: center;
+        }
+        .gauge-value {
+            font-size: 24px;
+            font-weight: 800;
+            color: #fff;
+            display: block;
+        }
+        .gauge-label {
+            font-size: 10px;
+            color: #8b95a5;
+        }
+        .window-right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        .data-item {
+            background: rgba(255, 255, 255, .04);
+            border-radius: 10px;
+            padding: 8px 14px;
+            text-align: center;
+        }
+        .data-item span {
+            display: block;
+            font-size: 10px;
+            color: #8b95a5;
+        }
+        .data-item b {
+            font-size: 16px;
+            color: #fff;
+        }
+        /* ========== 核心优势 ========== */
+        .advantage-section {
+            background: linear-gradient(180deg, var(--bg-deep) 0%, #0d141d 100%);
+            position: relative;
+        }
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .advantage-card {
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-pill);
+            padding: 36px 28px;
+            text-align: center;
+            backdrop-filter: blur(12px);
+            transition: var(--transition);
+        }
+        .advantage-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(229, 72, 77, .3);
+            box-shadow: var(--shadow-card);
+        }
+        .adv-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .adv-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: #fff;
+        }
+        .adv-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .adv-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        /* ========== 精选视频 ========== */
+        .video-section {
+            background: #0c1017;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .video-card {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .video-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(229, 72, 77, .25);
+            box-shadow: var(--shadow-card);
+        }
+        .video-thumbnail {
+            height: 180px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-category {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, .6);
+            color: #fff;
+            font-size: 11px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            backdrop-filter: blur(4px);
+        }
+        .video-category svg {
+            width: 12px;
+            height: 12px;
+            fill: var(--accent);
+        }
+        .play-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .25);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        .play-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+            margin-left: 3px;
+        }
+        .play-btn:hover {
+            transform: scale(1.1);
+            background: rgba(229, 72, 77, .7);
+        }
+        .video-duration {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(0, 0, 0, .7);
+            color: #fff;
+            font-size: 11px;
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+        .video-info {
+            padding: 18px;
+        }
+        .video-title {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .video-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            min-height: 42px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+        .video-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        .video-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .video-meta svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--text-secondary);
+        }
+        .video-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .tag {
+            background: rgba(255, 255, 255, .06);
+            color: var(--text-secondary);
+            font-size: 11px;
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+        .tag-video {
+            background: var(--primary);
+            color: #fff;
+            font-size: 11px;
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+        /* ========== 相关资讯 ========== */
+        .news-section {
+            background: #0d141d;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 1fr;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-card);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            min-height: 260px;
+            transition: var(--transition);
+        }
+        .news-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(255, 178, 36, .25);
+            box-shadow: var(--shadow-card);
+        }
+        .news-date {
+            font-size: 13px;
+            color: rgba(229, 72, 77, .7);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .news-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 50px;
+        }
+        .news-summary {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex: 1;
+            margin-bottom: 16px;
+        }
+        .news-link {
+            font-size: 14px;
+            color: var(--text-secondary);
+            transition: color .3s;
+            margin-top: auto;
+            display: inline-block;
+        }
+        .news-link:hover {
+            color: var(--primary);
+        }
+        /* ========== FAQ ========== */
+        .faq-section {
+            background: var(--bg-deep);
+        }
+        .faq-list {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .faq-item {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-card);
+            margin-bottom: 16px;
+            transition: var(--transition);
+            overflow: hidden;
+        }
+        .faq-item:hover {
+            border-color: rgba(229, 72, 77, .2);
+        }
+        .faq-question {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 20px 24px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .faq-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(229, 72, 77, .1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .faq-icon svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--primary);
+        }
+        .faq-question-text {
+            flex: 1;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 16px;
+        }
+        .faq-toggle {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            transition: transform .3s;
+        }
+        .faq-toggle::before,
+        .faq-toggle::after {
+            content: '';
+            position: absolute;
+            background: var(--text-secondary);
+            border-radius: 2px;
+        }
+        .faq-toggle::before {
+            width: 12px;
+            height: 2px;
+            top: 9px;
+            left: 4px;
+        }
+        .faq-toggle::after {
+            width: 2px;
+            height: 12px;
+            top: 4px;
+            left: 9px;
+            transition: opacity .3s;
+        }
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+        }
+        .faq-answer-inner {
+            padding: 0 24px 20px 70px;
+        }
+        .faq-answer-list {
+            list-style: disc;
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.8;
+            padding-left: 18px;
+        }
+        .faq-answer-list li {
+            margin-bottom: 6px;
+        }
+        /* ========== 评论留言 ========== */
+        .comment-section {
+            background: #0d141d;
+        }
+        .comment-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+        .comment-form-card {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-card);
+            padding: 32px;
+            position: sticky;
+            top: 100px;
+        }
+        .comment-form-card h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .form-nickname,
+        .form-textarea {
+            width: 100%;
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 14px 18px;
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            transition: border-color .3s;
+            font-family: inherit;
+            outline: none;
+        }
+        .form-nickname:focus,
+        .form-textarea:focus {
+            border-color: var(--primary);
+        }
+        .form-textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+        .form-submit {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+        .form-submit svg {
+            width: 14px;
+            height: 14px;
+            fill: #fff;
+        }
+        .form-submit:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        .comment-list-wrapper {
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-card);
+            padding: 24px;
+            max-height: 720px;
+            overflow-y: auto;
+        }
+        .comment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .comment-card {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border-light);
+            border-radius: 18px;
+            padding: 16px 18px;
+            transition: var(--transition);
+        }
+        .comment-card:hover {
+            border-color: rgba(255, 178, 36, .2);
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        .comment-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .comment-name {
+            font-weight: 600;
+            font-size: 14px;
+            flex: 1;
+        }
+        .comment-time {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        .comment-tag-row {
+            margin-bottom: 8px;
+        }
+        .comment-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            background: rgba(229, 72, 77, .1);
+            color: var(--primary);
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+        .comment-tag svg {
+            width: 10px;
+            height: 10px;
+            fill: currentColor;
+        }
+        .comment-content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .comment-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .comment-reply {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            transition: color .3s;
+        }
+        .comment-reply:hover {
+            color: var(--primary);
+        }
+        .comment-actions {
+            display: flex;
+            gap: 16px;
+        }
+        .comment-actions span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            transition: color .3s;
+        }
+        .comment-actions span:hover {
+            color: var(--primary);
+        }
+        .comment-list-more {
+            text-align: center;
+            padding-top: 16px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .comment-list-more svg {
+            width: 16px;
+            height: 16px;
+            animation: bounceDown 2s infinite;
+        }
+        @keyframes bounceDown {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(6px);
+            }
+        }
+        /* ========== 页脚 ========== */
+        .site-footer {
+            background: #080c12;
+            border-top: 1px solid var(--border-light);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .site-footer .container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .site-footer a {
+            color: var(--text-secondary);
+        }
+        .site-footer a:hover {
+            color: var(--primary);
+        }
+        /* ========== 响应式 ========== */
+        @media (max-width: 1024px) {
+            .hero-content {
+                flex-direction: column;
+                gap: 40px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            .hero {
+                height: auto;
+                min-height: auto;
+            }
+            .hero-left {
+                text-align: center;
+            }
+            .hero-desc {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-tags,
+            .hero-buttons {
+                justify-content: center;
+            }
+            .advantage-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .comment-container {
+                grid-template-columns: 1fr;
+            }
+            .comment-form-card {
+                position: static;
+            }
+        }
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+            .section-title {
+                font-size: 30px;
+            }
+            .nav-links {
+                display: none;
+            }
+            .hero-title {
+                font-size: 36px;
+            }
+            .hero-window {
+                max-width: 100%;
+            }
+            .window-body {
+                flex-direction: column;
+            }
+            .window-left {
+                flex-direction: row;
+            }
+            .advantage-grid {
+                grid-template-columns: 1fr;
+            }
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .faq-answer-inner {
+                padding-left: 24px;
+            }
+            .comment-list-wrapper {
+                max-height: 600px;
+            }
+        }
+        /* ========== 滚动进度条 ========== */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            z-index: 2000;
+            transition: width .1s linear;
+        }
+        /* ========== 淡入动画 ========== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- 滚动进度条 -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <!-- 粒子背景 -->
+    <canvas id="particles-canvas"></canvas>
+    <!-- ========== 固定导航栏 ========== -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none" stroke="#fff" stroke-width="2"/><path d="M10 9l6 3-6 3z" fill="#fff"/></svg>
+                </span>
+                <span class="logo-text">粤语屋</span>
+            </a>
+            <div class="nav-links">
+                <a href="#section-advantage">核心优势</a>
+                <a href="#section-video">精选视频</a>
+                <a href="#section-news">相关资讯</a>
+                <a href="#section-faq">常见问题</a>
+                <a href="#section-comment">评论留言</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== 首屏 Banner ========== -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-bg2"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-tag">
+                    <svg viewBox="0 0 24 24"><path d="M22 12L12 20l-2-2 6-6-6-6 2-2z"/></svg>
+                    粤语影视首选平台
+                </div>
+                <h1 class="hero-title">粤语屋粤正影视<br><span>高清在线观看</span></h1>
+                <p class="hero-desc">汇聚千部经典与现代粤语影视，高清画质流畅播放，每日更新不断，带您重温港味经典，发现粤语新作。</p>
+                <div class="hero-tags">
+                    <span>高清画质</span>
+                    <span>每日更新</span>
+                    <span>免安装</span>
+                    <span>多端同步</span>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-primary">立即观看</button>
+                    <button class="btn-ghost">了解更多</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-window">
+                    <div class="window-top-bar">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="window-url">yueyuwo.com</span>
+                    </div>
+                    <div class="window-body">
+                        <div class="window-left">
+                            <div class="product-icon">📺</div>
+                            <span class="product-name">粤语屋</span>
+                        </div>
+                        <div class="window-center">
+                            <svg class="gauge-svg" viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="48" stroke="rgba(255,255,255,0.08)" stroke-width="8" fill="none"/>
+                                <circle cx="60" cy="60" r="48" stroke="var(--primary)" stroke-width="8" fill="none" stroke-dasharray="301.6" stroke-dashoffset="90.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="gauge-text">
+                                <span class="gauge-value">70%</span>
+                                <span class="gauge-label">片库完整度</span>
+                            </div>
+                        </div>
+                        <div class="window-right">
+                            <div class="data-item"><span>总剧集</span><b>1,200+</b></div>
+                            <div class="data-item"><span>今日更新</span><b>18部</b></div>
+                            <div class="data-item"><span>在线用户</span><b>2,300</b></div>
+                            <div class="data-item"><span>高清资源</span><b>98%</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== 核心优势 ========== -->
+    <section class="advantage-section" id="section-advantage">
+        <div class="container">
+            <h2 class="section-title">核心优势</h2>
+            <p class="section-subtitle">为什么千万粤语影视爱好者选择粤语屋</p>
+        </div>
+        <div class="advantage-grid">
+            <div class="advantage-card fade-in">
+                <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="none" stroke="#fff" stroke-width="2"/><path d="M10 9l6 3-6 3z" fill="#fff"/></svg></div>
+                <h3 class="adv-title">海量粤语片库</h3>
+                <p class="adv-desc">千部经典与现代粤语剧集，涵盖各个时代港片精华，满足不同口味需求。</p>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 9.5C7.5 20 4 17 4 12V6z" fill="none" stroke="#fff" stroke-width="2"/><path d="M8 12l3 3 5-6" fill="none" stroke="#fff" stroke-width="2"/></svg></div>
+                <h3 class="adv-title">高清画质</h3>
+                <p class="adv-desc">4K/1080P超清播放，老片修复版画质惊艳，带来极致的观影体验。</p>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-9 9 9 9 0 01-9-9 9 9 0 019-9 9 9 0 019 9z" fill="none" stroke="#fff" stroke-width="2"/><path d="M12 7v5l3 3" fill="none" stroke="#fff" stroke-width="2"/></svg></div>
+                <h3 class="adv-title">每日更新</h3>
+                <p class="adv-desc">同步最新粤语影视资源，热门剧集第一时间上线，追剧永不掉队。</p>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M3 5v14l8-7z" fill="#fff"/><path d="M14 5h7v14h-7z" fill="none" stroke="#fff" stroke-width="2"/></svg></div>
+                <h3 class="adv-title">播放流畅</h3>
+                <p class="adv-desc">多线路智能切换，根据网络自动分配最优节点，减少卡顿和缓冲。</p>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0110 10 10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2z" fill="none" stroke="#fff" stroke-width="2"/><path d="M8 12h8M12 8v8" fill="none" stroke="#fff" stroke-width="2"/></svg></div>
+                <h3 class="adv-title">免安装在线看</h3>
+                <p class="adv-desc">无需下载任何客户端，浏览器打开即点即播，随手享受粤语影视。</p>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="adv-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3" fill="none" stroke="#fff" stroke-width="2"/><path d="M2 8h20M6 6h1M10 6h1" fill="none" stroke="#fff" stroke-width="2"/></svg></div>
+                <h3 class="adv-title">多端同步</h3>
+                <p class="adv-desc">手机、平板、电脑自动同步播放记录，随时切换设备继续追剧。</p>
+            </div>
+        </div>
+    </section>
+    <!-- ========== 精选视频 ========== -->
+    <section class="video-section" id="section-video">
+        <div class="container">
+            <h2 class="section-title">精选<em style="color:var(--primary);font-style:normal;">视频</em>推荐</h2>
+            <p class="section-subtitle">热门粤语剧集高清在线，每日更新</p>
+        </div>
+        <div class="video-grid">
+            <!-- 视频卡片 1 -->
+            <div class="video-card fade-in">
+                <div class="video-thumbnail" style="background:linear-gradient(135deg,#1a2a3a,#3a1a2a);">
+                    <span class="video-category"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg>经典剧集</span>
+                    <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    <span class="video-duration">45:12</span>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">《大时代》1992年经典商战剧</h3>
+                    <p class="video-desc">郑少秋、刘青云主演，港剧黄金时代巅峰之作，股市风云与家族恩怨交叠。</p>
+                    <div class="video-meta"><span>▶ 230万次</span><span>👍 4.2万</span></div>
+                    <div class="video-tags"><span class="tag-video">热门</span><span class="tag">郑少秋</span><span class="tag">刘青云</span></div>
+                </div>
+            </div>
+            <!-- 视频卡片 2 -->
+            <div class="video-card fade-in">
+                <div class="video-thumbnail" style="background:linear-gradient(135deg,#0f3d3e,#4a2c2c);">
+                    <span class="video-category"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg>警匪卧底</span>
+                    <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    <span class="video-duration">42:08</span>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">《使徒行者》爆Seed与钉姐</h3>
+                    <p class="video-desc">林峯、佘诗曼主演，全员卧底设定，猜卧底看谁笑到最后。</p>
+                    <div class="video-meta"><span>▶ 310万次</span><span>👍 5.8万</span></div>
+                    <div class="video-tags"><span class="tag-video">热议</span><span class="tag">林峯</span><span class="tag">佘诗曼</span></div>
+                </div>
+            </div>
+            <!-- 视频卡片 3 -->
+            <div class="video-card fade-in">
+                <div class="video-thumbnail" style="background:linear-gradient(135deg,#3d1a2a,#1a1a3d);">
+                    <span class="video-category"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg>家庭伦理</span>
+                    <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    <span class="video-duration">38:45</span>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">《溏心风暴》家好月圆</h3>
+                    <p class="video-desc">夏雨、李司棋领衔主演，海味铺背后的家族争产大戏，温馨与冲突并存。</p>
+                    <div class="video-meta"><span>▶ 198万次</span><span>👍 3.6万</span></div>
+                    <div class="video-tags"><span class="tag">夏雨</span><span class="tag">李司棋</span><span class="tag-video">经典</span></div>
+                </div>
+            </div>
+            <!-- 视频卡片 4 -->
+            <div class="video-card fade-in">
+                <div class="video-thumbnail" style="background:linear-gradient(135deg,#0a2a3a,#2a0a3a);">
+                    <span class="video-category"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg>犯罪悬疑</span>
+                    <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    <span class="video-duration">43:20</span>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">《法证先锋》科学破案</h3>
+                    <p class="video-desc">欧阳震华主演，法证科学与刑侦结合，用科技揭开案件真相。</p>
+                    <div class="video-meta"><span>▶ 176万次</span><span>👍 2.9万</span></div>
+                    <div class="video-tags"><span class="tag">欧阳震华</span><span class="tag-video">高分</span><span class="tag">法证</span></div>
+                </div>
+            </div>
+            <!-- 视频卡片 5 -->
+            <div class="video-card fade-in">
+                <div class="video-thumbnail" style="background:linear-gradient(135deg,#2a2a0a,#3a0a2a);">
+                    <span class="video-category"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg>家族奢华</span>
+                    <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    <span class="video-duration">50:10</span>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">《珠光宝气》上流社会</h3>
+                    <p class="video-desc">黎姿、蔡少芬主演，奢华珠宝与豪门恩怨交织的视觉盛宴。</p>
+                    <div class="video-meta"><span>▶ 145万次</span><span>👍 2.1万</span></div>
+                    <div class="video-tags"><span class="tag">黎姿</span><span class="tag">蔡少芬</span><span class="tag-video">豪门</span></div>
+                </div>
+            </div>
+            <!-- 视频卡片 6 -->
+            <div class="video-card fade-in">
+                <div class="video-thumbnail" style="background:linear-gradient(135deg,#1a2a0a,#0a1a3a);">
+                    <span class="video-category"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg>武侠经典</span>
+                    <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    <span class="video-duration">41:36</span>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">《倚天屠龙记》粤语版</h3>
+                    <p class="video-desc">金庸经典武侠巨制，粤语配音呈现江湖恩怨与侠骨柔情。</p>
+                    <div class="video-meta"><span>▶ 268万次</span><span>👍 5.1万</span></div>
+                    <div class="video-tags"><span class="tag-video">武侠</span><span class="tag">金庸</span><span class="tag">经典</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== 相关资讯 ========== -->
+    <section class="news-section" id="section-news">
+        <div class="container">
+            <h2 class="section-title">相关资讯</h2>
+            <p class="section-subtitle">粤语影视行业最新动态与深度解析</p>
+            <div class="divider"></div>
+        </div>
+        <div class="news-grid">
+            <div class="news-card fade-in">
+                <span class="news-date">2026-02-18</span>
+                <h3 class="news-title">老港片翻红：经典粤语影视如何圈粉Z世代</h3>
+                <p class="news-summary">流媒体平台让经典老港片重新进入年轻观众视野，高清修复版重映引发文化回潮。</p>
+                <a href="#" class="news-link">查看详情 →</a>
+            </div>
+            <div class="news-card fade-in">
+                <span class="news-date">2026-02-15</span>
+                <h3 class="news-title">从《大时代》到《使徒行者》：港剧叙事之变</h3>
+                <p class="news-summary">梳理近三十年港剧发展脉络，从家族争斗到警匪卧底，探寻长盛不衰的秘密。</p>
+                <a href="#" class="news-link">查看详情 →</a>
+            </div>
+            <div class="news-card fade-in">
+                <span class="news-date">2026-02-12</span>
+                <h3 class="news-title">粤语配音幕后：声音背后的演技派</h3>
+                <p class="news-summary">资深配音演员如何用声音塑造角色？带你走近这群幕后的声音表演大师。</p>
+                <a href="#" class="news-link">查看详情 →</a>
+            </div>
+            <div class="news-card fade-in">
+                <span class="news-date">2026-02-10</span>
+                <h3 class="news-title">港片黄金一代：银幕背后的创作密码</h3>
+                <p class="news-summary">从徐克到杜琪峰，香港导演用独特镜头语言征服世界，他们的创作秘诀是什么？</p>
+                <a href="#" class="news-link">查看详情 →</a>
+            </div>
+            <div class="news-card fade-in">
+                <span class="news-date">2026-02-08</span>
+                <h3 class="news-title">粤语影视出海：从小众到全球观众</h3>
+                <p class="news-summary">流媒体全球化加速粤语影视走向世界，国际电影节与字幕组共同助力文化传播。</p>
+                <a href="#" class="news-link">查看详情 →</a>
+            </div>
+            <div class="news-card fade-in">
+                <span class="news-date">2026-02-05</span>
+                <h3 class="news-title">新锐粤语导演的破圈之路</h3>
+                <p class="news-summary">新一代粤语导演正在崛起，他们用本土故事对话世界，为粤语影视注入活力。</p>
+                <a href="#" class="news-link">查看详情 →</a>
+            </div>
+        </div>
+    </section>
+    <!-- ========== 常见问题 FAQ ========== -->
+    <section class="faq-section" id="section-faq">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            <p class="section-subtitle">关于粤语影视的深度解答</p>
+        </div>
+        <div class="faq-list">
+            <!-- FAQ 1 -->
+            <div class="faq-item active fade-in">
+                <div class="faq-question">
+                    <span class="faq-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.5-1.5 4.5-3.5 5.5V17H9v-2.5C7 13.5 5 11.5 5 9a7 7 0 017-7zm-2 18h4v2h-4z"/></svg></span>
+                    <span class="faq-question-text">《大时代》中丁蟹的角色原型是谁？</span>
+                    <span class="faq-toggle"></span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <ul class="faq-answer-list">
+                            <li>丁蟹的角色原型融合了香港七八十年代多位股市风云人物，并无单一具体原型。</li>
+                            <li>编剧韦家辉创作灵感来自1987年香港股灾，将股市贪婪人性浓缩于丁蟹一身。</li>
+                            <li>丁蟹的"丁蟹效应"一词源于收视与股市联动，成为香港流行文化一部分。</li>
+                            <li>角色畸形价值观展现人性极端，是港剧史上最令人不寒而栗的反派之一。</li>
+                            <li>郑少秋以出神入化演技塑造丁蟹，使其成为影视经典形象。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span class="faq-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.5-1.5 4.5-3.5 5.5V17H9v-2.5C7 13.5 5 11.5 5 9a7 7 0 017-7zm-2 18h4v2h-4z"/></svg></span>
+                    <span class="faq-question-text">《使徒行者》的卧底身份真的能猜出来吗？</span>
+                    <span class="faq-toggle"></span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <ul class="faq-answer-list">
+                            <li>剧集采用"卧底全员"设定，连主角身份也扑朔迷离，直到结局才有最终揭晓。</li>
+                            <li>剧情通过暗号、接头细节埋下大量伏笔，细心的观众可以从细节中推测身份。</li>
+                            <li>官方曾放出"卧底线索图"帮助观众推理，但真实身份反转仍出乎多数人意料。</li>
+                            <li>林峯与佘诗曼的对手戏为卧底身份揭示增加情感张力。</li>
+                            <li>该剧以"猜卧底"为宣传卖点，成功引发全民追剧推理热潮。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span class="faq-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.5-1.5 4.5-3.5 5.5V17H9v-2.5C7 13.5 5 11.5 5 9a7 7 0 017-7zm-2 18h4v2h-4z"/></svg></span>
+                    <span class="faq-question-text">《溏心风暴》系列之间有什么关联？</span>
+                    <span class="faq-toggle"></span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <ul class="faq-answer-list">
+                            <li>《溏心风暴》系列以香港传统食品店铺为舞台，部部聚焦家族恩怨情仇。</li>
+                            <li>第一季以海味铺"家好月圆"为背景，第二季转型饼铺，第三季加入港式奶茶。</li>
+                            <li>剧集核心主题始终围绕"家"展开，用食物串联亲情、爱情与抉择。</li>
+                            <li>三季都有"争产"主线，但每次争夺的方式与人物关系均有明显区别。</li>
+                            <li>夏雨、李司棋、米雪等老戏骨贯穿系列，是剧集品质的定海神针。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span class="faq-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.5-1.5 4.5-3.5 5.5V17H9v-2.5C7 13.5 5 11.5 5 9a7 7 0 017-7zm-2 18h4v2h-4z"/></svg></span>
+                    <span class="faq-question-text">《法证先锋》的法证科技真实吗？</span>
+                    <span class="faq-toggle"></span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <ul class="faq-answer-list">
+                            <li>剧中法证设备与流程基于真实法证科学，但为戏剧效果进行了适度艺术加工。</li>
+                            <li>剧集邀请专业法证人员担任顾问，确保DNA检测、毒物分析等步骤准确可信。</li>
+                            <li>现实中法证报告需数周时间，剧中为叙事节奏做了时间压缩处理。</li>
+                            <li>部分高科技设备超前于现实，但主体技术均有真实科学依据。</li>
+                            <li>监制梅小青曾表示，剧集初衷是让观众了解法证人员的专业与辛苦。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span class="faq-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.5-1.5 4.5-3.5 5.5V17H9v-2.5C7 13.5 5 11.5 5 9a7 7 0 017-7zm-2 18h4v2h-4z"/></svg></span>
+                    <span class="faq-question-text">《珠光宝气》的取景地在哪里？</span>
+                    <span class="faq-toggle"></span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <ul class="faq-answer-list">
+                            <li>剧集以香港为背景，中环金融区、浅水湾豪宅均为主要取景地。</li>
+                            <li>剧中奢华珠宝店场景大多在真实珠宝品牌旗舰店内拍摄。</li>
+                            <li>外景远赴法国巴黎，塞纳河畔与埃菲尔铁塔都出现在剧情中。</li>
+                            <li>上流社会聚会场景取景于香港半岛酒店等高级场所。</li>
+                            <li>精心选择的取景地完美衬托了剧中豪门家族的奢华生活。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span class="faq-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.5-1.5 4.5-3.5 5.5V17H9v-2.5C7 13.5 5 11.5 5 9a7 7 0 017-7zm-2 18h4v2h-4z"/></svg></span>
+                    <span class="faq-question-text">《倚天屠龙记》粤语版与原著有哪些差异？</span>
+                    <span class="faq-toggle"></span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <ul class="faq-answer-list">
+                            <li>粤语版配音在忠于金庸原著基础上，加入了贴合香港文化的粤语方言表达。</li>
+                            <li>部分对白为使情节更紧凑有所删减，但核心人物关系和主线保持不变。</li>
+                            <li>粤语版张无忌的情感表达比原著更具港剧特色，情绪渲染更外放。</li>
+                            <li>配音演员阵容由香港资深声优组成，其中张无忌配音尤为观众称道。</li>
+                            <li>剧集曾推出加长版，补充了原著中部分被删减的江湖细节。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== 评论留言 ========== -->
+    <section class="comment-section" id="section-comment">
+        <div class="container">
+            <h2 class="section-title">评论留言</h2>
+            <p class="section-subtitle">听听大家怎么说，也欢迎分享你的看法</p>
+            <div class="divider"></div>
+        </div>
+        <div class="comment-container">
+            <!-- 发布留言表单 -->
+            <div class="comment-form-card">
+                <h3>📝 发布留言</h3>
+                <input type="text" class="form-nickname" placeholder="你的昵称" maxlength="20">
+                <textarea class="form-textarea" placeholder="写下你对本站剧集、功能的看法与建议..."></textarea>
+                <button class="form-submit">
+                    <svg viewBox="0 0 24 24"><path d="M5 12l14-9-4 9 4 9z"/></svg>
+                    发布留言
+                </button>
+            </div>
+            <!-- 评论列表 -->
+            <div class="comment-list-wrapper">
+                <div class="comment-list" id="commentList"></div>
+                <div class="comment-list-more">
+                    向下滑动查看更多留言
+                    <svg viewBox="0 0 24 24" style="vertical-align:middle"><path d="M12 16l-6-6 1.4-1.4L12 13.2l4.6-4.6L18 10z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== 页脚 ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 粤语屋粤正影视 版权所有</p>
+            <p>免责声明：本站所有内容均来自互联网公开渠道，仅供学习交流，请勿用于商业用途。如侵犯您的权益，请联系我们处理。</p>
+            <p><a href="#">关于我们</a> · <a href="#">联系方式</a> · <a href="#">隐私政策</a></p>
+        </div>
+    </footer>
+    <!-- ========== 结构化数据 SEO ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "《大时代》中丁蟹的角色原型是谁？",
+            "acceptedAnswer": { "@type": "Answer", "text": "丁蟹的角色原型融合了香港七八十年代多位股市风云人物，并无单一具体原型。编剧韦家辉创作灵感来自1987年香港股灾，将股市贪婪人性浓缩于丁蟹一身。郑少秋以出神入化演技塑造丁蟹，使其成为影视经典形象。" }
+        }, {
+            "@type": "Question",
+            "name": "《使徒行者》的卧底身份真的能猜出来吗？",
+            "acceptedAnswer": { "@type": "Answer", "text": "剧集采用'卧底全员'设定，连主角身份也扑朔迷离，直到结局才有最终揭晓。剧情通过暗号、接头细节埋下大量伏笔，官方曾放出'卧底线索图'帮助观众推理。该剧以'猜卧底'为宣传卖点，成功引发全民追剧推理热潮。" }
+        }, {
+            "@type": "Question",
+            "name": "《溏心风暴》系列之间有什么关联？",
+            "acceptedAnswer": { "@type": "Answer", "text": "《溏心风暴》系列以香港传统食品店铺为舞台，部部聚焦家族恩怨情仇。第一季以海味铺'家好月圆'为背景，第二季转型饼铺，第三季加入港式奶茶。夏雨、李司棋、米雪等老戏骨贯穿系列。" }
+        }, {
+            "@type": "Question",
+            "name": "《法证先锋》的法证科技真实吗？",
+            "acceptedAnswer": { "@type": "Answer", "text": "剧中法证设备与流程基于真实法证科学，但为戏剧效果进行了适度艺术加工。剧集邀请专业法证人员担任顾问，确保DNA检测、毒物分析等步骤准确可信。" }
+        }, {
+            "@type": "Question",
+            "name": "《珠光宝气》的取景地在哪里？",
+            "acceptedAnswer": { "@type": "Answer", "text": "剧集以香港为背景，中环金融区、浅水湾豪宅均为主要取景地。外景远赴法国巴黎，上流社会聚会场景取景于香港半岛酒店等高级场所。" }
+        }, {
+            "@type": "Question",
+            "name": "《倚天屠龙记》粤语版与原著有哪些差异？",
+            "acceptedAnswer": { "@type": "Answer", "text": "粤语版配音在忠于金庸原著基础上，加入了贴合香港文化的粤语方言表达。部分对白为使情节更紧凑有所删减，但核心人物关系和主线保持不变。" }
+        }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [{
+            "@type": "VideoObject",
+            "name": "《大时代》1992年经典商战剧",
+            "description": "郑少秋、刘青云主演，港剧黄金时代巅峰之作。",
+            "thumbnailUrl": "/images/video-dashidai.jpg",
+            "uploadDate": "2026-01-15",
+            "duration": "PT45M"
+        }, {
+            "@type": "VideoObject",
+            "name": "《使徒行者》爆Seed与钉姐",
+            "description": "林峯、佘诗曼主演，全员卧底设定。",
+            "thumbnailUrl": "/images/video-shixi.jpg",
+            "uploadDate": "2026-01-18",
+            "duration": "PT42M"
+        }, {
+            "@type": "VideoObject",
+            "name": "《溏心风暴》家好月圆",
+            "description": "夏雨、李司棋领衔主演，家族争产大戏。",
+            "thumbnailUrl": "/images/video-tangxin.jpg",
+            "uploadDate": "2026-01-20",
+            "duration": "PT39M"
+        }, {
+            "@type": "VideoObject",
+            "name": "《法证先锋》科学破案",
+            "description": "欧阳震华主演，法证科学与刑侦结合。",
+            "thumbnailUrl": "/images/video-fazheng.jpg",
+            "uploadDate": "2026-01-22",
+            "duration": "PT43M"
+        }, {
+            "@type": "VideoObject",
+            "name": "《珠光宝气》上流社会",
+            "description": "黎姿、蔡少芬主演，奢华豪门盛宴。",
+            "thumbnailUrl": "/images/video-zhuguang.jpg",
+            "uploadDate": "2026-01-25",
+            "duration": "PT50M"
+        }, {
+            "@type": "VideoObject",
+            "name": "《倚天屠龙记》粤语版",
+            "description": "金庸经典武侠巨制，粤语配音呈现。",
+            "thumbnailUrl": "/images/video-yitian.jpg",
+            "uploadDate": "2026-01-28",
+            "duration": "PT42M"
+        }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [{
+            "@type": "Article",
+            "name": "老港片翻红：经典粤语影视如何圈粉Z世代",
+            "headline": "老港片翻红：经典粤语影视如何圈粉Z世代",
+            "datePublished": "2026-02-18",
+            "author": { "@type": "Organization", "name": "粤语屋粤正影视" }
+        }, {
+            "@type": "Article",
+            "name": "从《大时代》到《使徒行者》：港剧叙事之变",
+            "headline": "从《大时代》到《使徒行者》：港剧叙事之变",
+            "datePublished": "2026-02-15",
+            "author": { "@type": "Organization", "name": "粤语屋粤正影视" }
+        }, {
+            "@type": "Article",
+            "name": "粤语配音幕后：声音背后的演技派",
+            "headline": "粤语配音幕后：声音背后的演技派",
+            "datePublished": "2026-02-12",
+            "author": { "@type": "Organization", "name": "粤语屋粤正影视" }
+        }, {
+            "@type": "Article",
+            "name": "港片黄金一代：银幕背后的创作密码",
+            "headline": "港片黄金一代：银幕背后的创作密码",
+            "datePublished": "2026-02-10",
+            "author": { "@type": "Organization", "name": "粤语屋粤正影视" }
+        }, {
+            "@type": "Article",
+            "name": "粤语影视出海：从小众到全球观众",
+            "headline": "粤语影视出海：从小众到全球观众",
+            "datePublished": "2026-02-08",
+            "author": { "@type": "Organization", "name": "粤语屋粤正影视" }
+        }, {
+            "@type": "Article",
+            "name": "新锐粤语导演的破圈之路",
+            "headline": "新锐粤语导演的破圈之路",
+            "datePublished": "2026-02-05",
+            "author": { "@type": "Organization", "name": "粤语屋粤正影视" }
+        }]
+    }
+    </script>
+    <!-- ========== 自定义JS ========== -->
+    <script>
+        // ===== 粒子背景 =====
+        (function() {
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let width = canvas.width = window.innerWidth;
+            let height = canvas.height = window.innerHeight;
+            const particles = [];
+            for (let i = 0; i < 40; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    r: Math.random() * 2 + 0.5,
+                    vx: (Math.random() - 0.5) * 0.4,
+                    vy: (Math.random() - 0.5) * 0.4,
+                    color: Math.random() > 0.5 ? 'rgba(229,72,77,0.4)' : 'rgba(255,178,36,0.3)'
+                });
+            }
+            function draw() {
+                ctx.clearRect(0, 0, width, height);
+                particles.forEach(p => {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = p.color;
+                    ctx.fill();
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    if (p.x < 0 || p.x > width) p.vx *= -1;
+                    if (p.y < 0 || p.y > height) p.vy *= -1;
+                });
+                requestAnimationFrame(draw);
+            }
+            draw();
+            window.addEventListener('resize', function() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            });
+        })();
+        // ===== 滚动进度条 =====
+        const progress = document.getElementById('scrollProgress');
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progress.style.width = percent + '%';
+        });
+        // ===== FAQ 手风琴 =====
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', function() {
+                if (item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    return;
+                }
+                faqItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+        // ===== 淡入动画 =====
+        const fadeEls = document.querySelectorAll('.fade-in');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            fadeEls.forEach(el => observer.observe(el));
+        } else {
+            fadeEls.forEach(el => el.classList.add('visible'));
+        }
+        // ===== 动态生成评论 =====
+        (function() {
+            const list = document.getElementById('commentList');
+            const comments = [
+                { name: '阿强', avatar: '阿', content: '画质真的清晰，老港片看起来太舒服了！', tag: '好评' },
+                { name: '小婷', avatar: '婷', content: '每天都在等《使徒行者》更新，太燃了！', tag: '催更' },
+                { name: '大鹏', avatar: '鹏', content: '粤语屋的资源真全，想看的都有！', tag: '热门' },
+                { name: '玲玲', avatar: '玲', content: '字幕翻译准确，看粤语原声太享受了。', tag: '观点' },
+                { name: '明仔', avatar: '明', content: '播放很流畅，没有卡顿，好评！', tag: '理性' },
+                { name: '芳芳', avatar: '芳', content: '希望多上一些经典老港片！', tag: '催更' },
+                { name: '建辉', avatar '辉', content: '手机端和电脑端同步进度，太方便了。', tag: '好评' },
+                { name: '淑仪', avatar: '淑', content: '界面设计简洁，找剧很轻松。', tag: '理性' },
+                { name: '志强', avatar: '志', content: '看到《大时代》修复版，感动哭了。', tag: '精彩' },
+                { name: '美芳', avatar: '美', content: '广告少，体验非常好！', tag: '好评' },
+                { name: '国华', avatar: '国', content: '什么时候能上《溏心风暴》第三部？', tag: '讨论' },
+                { name: '秀兰', avatar: '秀', content: '给朋友推荐了粤语屋，都说好用。', tag: '好评' },
+                { name: '子豪', avatar: '豪', content: '字幕可以调大小，对近视党友好。', tag: '观点' },
+                { name: '雅琴', avatar: '雅', content: '老片修复效果惊艳，色彩太棒了。', tag: '精彩' },
+                { name: '伟明', avatar: '伟', content: '高清资源很多，基本都能找到。', tag: '热门' },
+                { name: '丽丽', avatar: '丽', content: '追剧必备神器，每天都来打卡。', tag: '热议' },
+                { name: '永康', avatar: '康', content: '缓存功能好用，地铁上也能看。', tag: '好评' },
+                { name: '秋月', avatar: '秋', content: '希望增加倍速播放的记忆功能。', tag: '建议' },
+                { name: '家伟', avatar: '伟', content: '剧集分类清晰，找起来超快。', tag: '理性' },
+                { name: '雪花', avatar: '雪', content: '弹幕氛围好，大家一起讨论剧情。', tag: '讨论' },
+                { name: '健华', avatar: '健', content: '粤语原声太有味道了，赞！', tag: '好评' },
+                { name: '瑞芳', avatar: '瑞', content: '推荐算法很准，都是我喜欢的类型。', tag: '观点' },
+                { name: '俊杰', avatar: '杰', content: '下载速度很快，离线观看无压力。', tag: '热门' },
+                { name: '思敏', avatar: '思', content: '界面颜值高，用着很舒心。', tag: '好评' },
+                { name: '建华', avatar: '华', content: '有些老剧连字幕都有，太良心了。', tag: '精彩' },
+                { name: '丽华', avatar: '华', content: '希望上一下《法证先锋》全集。', tag: '催更' },
+                { name: '志明', avatar: '志', content: '画质音效都很好，像影院一样。', tag: '好评' },
+                { name: '小兰', avatar: '兰', content: '手机投屏到电视也很好用。', tag: '观点' },
+                { name: '伟强', avatar: '强', content: '评论区交流氛围好，都是剧迷。', tag: '热议' },
+                { name: '桂英', avatar: '桂', content: '家里老人也爱用，操作简单。', tag: '好评' },
+                { name: '立群', avatar: '群', content: '热播剧更新很快，不拖更。', tag: '好评' },
+                { name: '春燕', avatar: '春', content: '高清修复版效果太好了，收藏！', tag: '精彩' },
+                { name: '家豪', avatar: '豪', content: '偶尔有些视频加载慢，希望优化。', tag: '建议' },
+                { name: '宝珠', avatar: '珠', content: '功能越来越完善，支持粤语屋！', tag: '热议' },
+                { name: '德胜', avatar: '德', content: '很多绝版老剧这里都有，宝藏平台。', tag: '精彩' },
+                { name: '文静', avatar: '静', content: '收藏夹同步功能很贴心。', tag: '好评' },
+                { name: '海涛', avatar: '涛', content: '希望增加粤语电影专区。', tag: '建议' },
+                { name: '银川', avatar: '银', content: '观影记录很清晰，找回来方便。', tag: '理性' },
+                { name: '佩玲', avatar: '佩', content: '被安利来的，果然没失望！', tag: '好评' },
+                { name: '振华', avatar: '振', content: '科技感十足，体验非常好。', tag: '观点' },
+                { name: '晓东', avatar: '晓', content: '希望在网页端也增加夜间模式。', tag: '建议' },
+                { name: '玉珍', avatar: '玉', content: '内容更新及时，每次都有惊喜。', tag: '热门' },
+                { name: '建国', avatar: '建', content: 'VIP功能性价比高，值得开。', tag: '理性' },
+                { name: '雪梅', avatar: '梅', content: '喜欢粤语配音的小朋友很爱看。', tag: '好评' },
+                { name: '柏豪', avatar: '柏', content: '界面干净没有牛皮癣广告，好评。', tag: '好评' },
+                { name: '惠敏', avatar: '敏', content: '观感体验比很多大平台都舒服。', tag: '热议' },
+                { name: '瑞华', avatar: '瑞', content: '追《珠光宝气》停不下来！', tag: '催更' },
+                { name: '国豪', avatar: '国', content: '粤语屋是港剧爱好者的天堂。', tag: '精彩' },
+                { name: '雯雯', avatar: '雯', content: '播放记录多端同步，好用极了。', tag: '好评' },
+                { name: '志鹏', avatar: '鹏', content: '希望能一直做下去，支持！', tag: '热议' }
+            ];
+            // 生成近30天随机时间并降序
+            const now = Date.now();
+            const dayMs = 24 * 60 * 60 * 1000;
+            const tagged = comments.map((c, i) => {
+                const offset = Math.floor(Math.random() * 30) * dayMs + Math.floor(Math.random() * dayMs);
+                const ts = now - offset;
+                const d = new Date(ts);
+                const pad = n => String(n).padStart(2, '0');
+                const timeStr = d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + ' ' + pad(d.getHours()) + ':' + pad(d
+                    .getMinutes());
+                return { ...c, time: timeStr, ts, like: Math.floor(Math.random() * 1000), reply: Math.floor(Math.random() * 50), tag: c.tag };
+            }).sort((a, b) => b.ts - a.ts);
+            const tagIcons = {
+                '好评': '✓',
+                '催更': '⏰',
+                '热门': '🔥',
+                '观点': '💡',
+                '理性': '🎯',
+                '精彩': '✨',
+                '讨论': '💬',
+                '建议': '📝',
+                '热议': '💥'
+            };
+            tagged.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'comment-card';
+                card.innerHTML = `
+                    <div class="comment-header">
+                        <span class="comment-avatar">${item.avatar}</span>
+                        <span class="comment-name">${item.name}</span>
+                        <span class="comment-time">${item.time}</span>
+                    </div>
+                    <div class="comment-tag-row">
+                        <span class="comment-tag">${tagIcons[item.tag] || '💬'} ${item.tag}</span>
+                    </div>
+                    <p class="comment-content">${item.content}</p>
+                    <div class="comment-footer">
+                        <span class="comment-reply">↩ 回复</span>
+                        <div class="comment-actions">
+                            <span>👍 ${item.like}</span>
+                            <span>💬 ${item.reply}</span>
+                        </div>
+                    </div>
+                `;
+                list.appendChild(card);
+            });
+        })();
+        // ===== 动态更新资讯日期（近90天） =====
+        (function() {
+            const dateEls = document.querySelectorAll('.news-card .news-date');
+            const now = Date.now();
+            const dayMs = 24 * 60 * 60 * 1000;
+            // 生成近90天内日期
+            const dates = [];
+            for (let i = 0; i < 6; i++) {
+                const offset = Math.floor(Math.random() * 90) * dayMs;
+                const d = new Date(now - offset);
+                const pad = n => String(n).padStart(2, '0');
+                dates.push(d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()));
+            }
+            dates.sort((a, b) => (a < b ? 1 : -1)); // 降序
+            dateEls.forEach((el, i) => {
+                el.textContent = dates[i] || dates[0];
+            });
+        })();
+    </script>
+</body>
+</html>
